@@ -40,15 +40,51 @@
             <legend>Loan Type</legend>
             <label for="loantype">Type of Loan</label>
             <p>
-                <input type=radio>Commercial
-                <input type=radio>Real Estate
-                <input type=radio>Personal
-                <input type=radio>Mortgage
+                <input type=radio name="loantype">Commercial
+                <input type=radio name="loantype">Real Estate
+                <input type=radio name="loantype">Personal
+                <input type=radio name="loantype">Mortgage
             </p>
+        </fieldset>
+        <fieldset>
+            <legend>Loan Terms</legend>
+            <label for="loanamount">Loan Amount</label>
+            <p>
+                <input type=radio name="term">5 Years
+                <input type=radio name="term">15 Years
+                <input type=radio name="term">30 Years
+            </p>    
+        </fieldset>
+        <fieldset>
+            <legend>Other Information</legend>
+            <div>
+                <input type="checkbox" name="condition">Downpayment
+                <input type="checkbox" name="condition">Reside Out of State
+                <input type="checkbox" name="condition">Married
+                <input type="checkbox" name="condition">Co-Signer
 
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Additional Comments</legend>
+                <label for="comments">Comments</label>
+                <input type="text" name="comments" size="70" style="height:90px; width:700px">
+        </fieldset>
+        <fieldset>
+            <legend>Other Contact Information</legend>
+            <label for="email">Email</label>
+                <input type="email" placeholder="email address" size="70" name="email">
+            <div>
+                <label for="tel">Phone Number</label>
+                <input type="tel" placeholder="555-555-5555" name="tel">
+            </div>
+            <div>
+                <label for="linkedinprofile">LinkedIn Profile URL</label>
+                <input type="url" size="70" name="linkedinprofile">
+            </div>
         </fieldset>
         </form>
-        <button type="submit">Click Me!</button>
+        <button type="submit">Submit Application</button>
         <!-- Applicant first name
             Applicant middle initial
             Applicant last name
